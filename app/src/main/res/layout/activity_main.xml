@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <fragment
+        tools:context =".MainActivity"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:hint="Search"
+            android:id="@+id/tv_search"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:src="@drawable/search"
+            android:layout_width="70dip"
+            android:layout_height="48dip"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:layout_margin="1dp"
+            android:background="@drawable/button"
+            android:textColor="@color/text"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_addlocation"
+            android:text="ADD"/>
+        <Button
+
+            android:layout_margin="1dp"
+            android:background="@drawable/button"
+            android:textColor="@color/text"
+            android:layout_weight="1"
+            android:id="@+id/btn_findmiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIDDLE"/>
+        <Button
+            android:textSize="15dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/button"
+            android:textColor="@color/text"
+            android:layout_weight="1"
+            android:id="@+id/btn_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEATHER"/>
+        <Button
+            android:background="@drawable/button"
+            android:textSize="15dp"
+            android:layout_margin="1dp"
+            android:textColor="@color/text"
+            android:layout_weight="1"
+            android:id="@+id/btn_crrentlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS"/>
+<!--
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_sub1"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_sub2"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_sub3"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_sub4"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_sub5"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+-->
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
